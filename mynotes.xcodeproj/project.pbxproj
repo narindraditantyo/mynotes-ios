@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110236062558CB9B00533592 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 110236052558CB9B00533592 /* Settings.bundle */; };
+		1132CBD225586501001F22B3 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132CBD125586501001F22B3 /* Notes.swift */; };
+		113B1D0F2558A890000E37E8 /* NotesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113B1D0E2558A890000E37E8 /* NotesData.swift */; };
+		11FF7E2225589DE40086EF10 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7E2025589DE40086EF10 /* NotesTableViewCell.swift */; };
+		11FF7E2325589DE40086EF10 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7E2125589DE40086EF10 /* NotesTableViewCell.xib */; };
+		11FF7E282558A1860086EF10 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7E262558A1860086EF10 /* AddEditViewController.swift */; };
+		11FF7E292558A1860086EF10 /* AddEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7E272558A1860086EF10 /* AddEditViewController.xib */; };
 		7FDD0A43255714C3002D5050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD0A42255714C3002D5050 /* AppDelegate.swift */; };
 		7FDD0A45255714C3002D5050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD0A44255714C3002D5050 /* ViewController.swift */; };
 		7FDD0A48255714C3002D5050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD0A46255714C3002D5050 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110236052558CB9B00533592 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1132CBD125586501001F22B3 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		113B1D0E2558A890000E37E8 /* NotesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesData.swift; sourceTree = "<group>"; };
+		11FF7E2025589DE40086EF10 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		11FF7E2125589DE40086EF10 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
+		11FF7E262558A1860086EF10 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		11FF7E272558A1860086EF10 /* AddEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEditViewController.xib; sourceTree = "<group>"; };
 		7FDD0A3F255714C3002D5050 /* mynotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mynotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDD0A42255714C3002D5050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FDD0A44255714C3002D5050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1132CBD42558650B001F22B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1132CBD125586501001F22B3 /* Notes.swift */,
+				113B1D0E2558A890000E37E8 /* NotesData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1132CBD525586512001F22B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FDD0A46255714C3002D5050 /* Main.storyboard */,
+				11FF7E2125589DE40086EF10 /* NotesTableViewCell.xib */,
+				11FF7E272558A1860086EF10 /* AddEditViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1132CBD62558652F001F22B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FDD0A44255714C3002D5050 /* ViewController.swift */,
+				11FF7E2025589DE40086EF10 /* NotesTableViewCell.swift */,
+				11FF7E262558A1860086EF10 /* AddEditViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		7FDD0A36255714C2002D5050 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +97,14 @@
 		7FDD0A41255714C3002D5050 /* mynotes */ = {
 			isa = PBXGroup;
 			children = (
+				1132CBD62558652F001F22B3 /* Controller */,
+				1132CBD525586512001F22B3 /* View */,
+				1132CBD42558650B001F22B3 /* Model */,
 				7FDD0A42255714C3002D5050 /* AppDelegate.swift */,
-				7FDD0A44255714C3002D5050 /* ViewController.swift */,
-				7FDD0A46255714C3002D5050 /* Main.storyboard */,
 				7FDD0A49255714C8002D5050 /* Assets.xcassets */,
 				7FDD0A4B255714C8002D5050 /* LaunchScreen.storyboard */,
 				7FDD0A4E255714C8002D5050 /* Info.plist */,
+				110236052558CB9B00533592 /* Settings.bundle */,
 			);
 			path = mynotes;
 			sourceTree = "<group>";
@@ -91,11 +136,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Narindra Aditantyo";
 				TargetAttributes = {
 					7FDD0A3E255714C3002D5050 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1210;
 					};
 				};
 			};
@@ -125,6 +171,9 @@
 				7FDD0A4D255714C8002D5050 /* LaunchScreen.storyboard in Resources */,
 				7FDD0A4A255714C8002D5050 /* Assets.xcassets in Resources */,
 				7FDD0A48255714C3002D5050 /* Main.storyboard in Resources */,
+				11FF7E292558A1860086EF10 /* AddEditViewController.xib in Resources */,
+				110236062558CB9B00533592 /* Settings.bundle in Resources */,
+				11FF7E2325589DE40086EF10 /* NotesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113B1D0F2558A890000E37E8 /* NotesData.swift in Sources */,
 				7FDD0A45255714C3002D5050 /* ViewController.swift in Sources */,
+				11FF7E282558A1860086EF10 /* AddEditViewController.swift in Sources */,
 				7FDD0A43255714C3002D5050 /* AppDelegate.swift in Sources */,
+				1132CBD225586501001F22B3 /* Notes.swift in Sources */,
+				11FF7E2225589DE40086EF10 /* NotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +241,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -220,6 +274,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -249,6 +304,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -274,6 +330,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  mynotes
 //
-//  Created by Hendro Kristantyo on 08/11/20.
+//  Created by Narindra Aditantyo on 08/11/20.
 //  Copyright © 2020 Narindra Aditantyo. All rights reserved.
 //
 
